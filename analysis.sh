@@ -12,4 +12,4 @@ export R_LIBS=$PWD/packages
 
 A=$1
 echo "${A##*/}" 
-Rscript linearRegression.R "${A##*/}"
+Rscript logisticRegression.R "${A##*/}"
