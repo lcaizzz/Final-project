@@ -3,13 +3,6 @@
 # Get the command line arguments
 args <- commandArgs(trailingOnly=TRUE)
 
-# Check if there is exactly one argument
-if(length(args) == 1) {
-  file <- args[1]
-} else {
-  cat('Usage: Rscript playtime_at_review.R <file name>\n', file=stderr())
-  stop("Incorrect number of arguments.", call. = FALSE)
-}
 
 library(data.table)
 
